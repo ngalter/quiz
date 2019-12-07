@@ -102,8 +102,8 @@ document.body.appendChild(quizLabel1);
 document.body.appendChild(quiz2);
 document.body.appendChild(quizLabel2);
 document.body.appendChild(startBtn);
-document.body.appendChild(showResults);
 document.body.appendChild(fScores);
+document.body.appendChild(showResults);
 fScores.appendChild(fInput);
 fScores.appendChild(fBtn);
 fScores.appendChild(showScores);
@@ -332,20 +332,22 @@ function loadQuestions()
 clearScores.addEventListener("click", function(event)
 {
     localStorage.clear();
+    showResults.remove();
 });
 
 showScores.addEventListener("click", function(event)
 {
+    showResults.style.display = "block";
     var len = localStorage.length;
     console.log(len);
     var str = "";
-        for (var i = 1; i<len; i++)
+        for (var i = 0; i<len; i++)
         {
             key = i.toString();
             var li = document.createElement("li");
             li.innerText = localStorage.getItem(key);
             console.log(li.innerText);
-            fScores.appendChild(li);   
+            showResults.appendChild(li);   
         }
 });
 
