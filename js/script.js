@@ -62,7 +62,7 @@ quizLabel1.setAttribute("style","margin-left:46%; width:20%; margin-top:-1em;tex
 quiz1.setAttribute("style","margin-left:43%;")
 quizLabel2.setAttribute("style","margin-left:46%; width:20%; margin-top:-1em;text-align:left;color:#3366ff;font-family:sans-serif;")
 quiz2.setAttribute("style","margin-left:43%;")
-fScores.setAttribute("style","margin-left:20%; margin-right: 20%; width:60%; padding:10px; text-align:left;color:#3366ff;font-weight:500;font-size:1.1em;font-family:sans-serif;background-color:#efefef;border: solid 2px #cccccc; border-radius: 5px;")
+fScores.setAttribute("style", "margin-left:20%; margin-right: 20%; width:60%; padding:10px; text-align:left;color:#3366ff;font-weight:500;font-size:1.1em;font-family:sans-serif;background-color:#efefef;border: solid 2px #cccccc; border-radius: 5px;")
 hScores.setAttribute("style","margin-left:25%; margin-right: 25%; width:50%; padding:.5em;text-align:left;color:#3399FF;font-size:.8em;font-family:sans-serif;")
 
 startOver.id = "sOver";
@@ -122,6 +122,7 @@ listScores.setAttribute("style","width:100%;margin-top: 1em;")
 document.getElementById("label").innerHTML = "High Scorers:";
 fInput.id  = "fi";
 fBtn.id = "fb";
+fScores.id = "fScore"
 showScores.id = "ssBtn";
 clearScores.id = "csBtn";
 listScores.id = "listS"
@@ -137,7 +138,7 @@ document.getElementById("start").addEventListener("click", start);
 correctChoice.style.display = "none";
 document.getElementById("r1").innerHTML = "Code Quiz <i class=\"fas fa-laptop-code\"></i>";
 document.getElementById("q1").checked = true;
-document.getElementById("fb").innerHTML = "Your Initials"
+document.getElementById("fb").innerHTML = "Enter"
 document.getElementById("ssBtn").innerHTML = "Past Scores"
 document.getElementById("csBtn").innerHTML = "Clear Scores"
 document.getElementById("r2").innerHTML = "Surprise <i class=\"fas fa-paw\"></i>";
