@@ -138,8 +138,8 @@ document.getElementById("start").addEventListener("click", start);
 correctChoice.style.display = "none";
 document.getElementById("r1").innerHTML = "Code Quiz <i class=\"fas fa-laptop-code\"></i>";
 document.getElementById("q1").checked = true;
-document.getElementById("fb").innerHTML = "Enter"
-document.getElementById("ssBtn").innerHTML = "Past Scores"
+document.getElementById("fb").innerHTML = "Enter Initials"
+document.getElementById("ssBtn").innerHTML = "List Scores"
 document.getElementById("csBtn").innerHTML = "Clear Scores"
 document.getElementById("r2").innerHTML = "Surprise <i class=\"fas fa-paw\"></i>";
 document.getElementById("q2").checked = false;
@@ -341,7 +341,7 @@ showScores.addEventListener("click", function(event)
     var len = localStorage.length;
     console.log(len);
     var str = "";
-        for (var i = 0; i<len; i++)
+        for (var i = 1; i<=len; i++)
         {
             key = i.toString();
             var li = document.createElement("li");
